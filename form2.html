@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Exercise 2</title>
+    <link rel="stylesheet" href="form2-style.css" />
+</head>
+
+<body>
+    <div class="outter">
+        <div class="title">
+            <h1>Create Account</h1>
+        </div>
+        <div class="container">
+            <div class="fname">
+                <label for="fname"><p>First name*</p></label><br>
+                <input type="text" id="fname" name="fname" placeholder="  enter your first name" required />
+            </div>
+
+            <div class="fname">
+                <label for="lname"><p>Last name*</p></label><br>
+                <input type="text" id="lname" name="lname" placeholder="  enter your last name" required />
+            </div>
+
+            <div class="email">
+                <label for="email"><p>Email*</p></label><br>
+                <input type="email" id="email" name="email" placeholder="  enter your email" required />
+            </div>
+
+            <div class="password">
+                <label for="password"><p>Password*</p></label><br>
+                <input type="password" id="password" name="password" placeholder="  enter your password" required />
+            </div>
+
+            <div class="pass">
+                <label for="pass"><p>Confirm Password*</p></label><br>
+                <input type="password" id="pass" name="pass" placeholder="  enter your password again" required />
+            </div>
+
+            <div class="gender">
+                <label for="Gender"><p>Gender:</p></label><br>
+                <div class="gselect">
+                    <input type="radio" id="male" name="Gender" />
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="Gender" />
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <div class="hobbies">
+                <label for="Hobbies"><p>Hobbies</p></label><br>
+                <div class="hselect">
+                    <input type="checkbox" id="Music" name="Hobbies" />
+                    <label for="Music">Music</label>
+                    <input type="checkbox" id="Sports" name="Hobbies" />
+                    <label for="Sports">Sports</label>
+                    <input type="checkbox" id="Travel" name="Hobbies" />
+                    <label for="Travel">Travel</label>
+                    <input type="checkbox" id="Movies" name="Hobbies" />
+                    <label for="Movies">Movies</label>
+                </div>
+            </div>
+
+            <div class="source">
+                <label for="Source"><p>Source of income</p></label><br>
+                <select name="Source" id="Source">
+                    <option value="Employed">Employed</option>
+                </select>
+            </div>
+
+            <div class="income">
+                <label for="income"><p>Income</p></label><br>
+                <div class="range">
+                    <input type="range" id="income" name="income" min="0" max="100" value="0" />
+                    <p>20K</p>
+                </div>
+            </div>
+
+            <div class="upload">
+                <label for="Upload"><p>Upload Proile Picture</p></label><br>
+                <input type="file" name="Upload" id="Upload" />
+            </div>
+
+            <div class="age">
+                <label for="Age"><p>Age</p></label><br>
+                <input type="number" id="Age" name="Age" value="18" min="0" max="100" />
+            </div>
+
+            <div class="bio">
+                <label for="Bio"><p>Bio</p></label><br>
+                <textarea name="Bio" id="Bio"></textarea>
+            </div>
+        </div>
+            <input type="submit" id="submit" name="submit" value="Create" />
+    </div>
+</body>
+
+</html>
